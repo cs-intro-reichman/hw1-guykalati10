@@ -7,7 +7,7 @@ public class Ascend {
 	public static void main(String[] args) {
 		//Random random = new Random();
 
-		int lim = 100;
+		int lim = Integer.parseInt(args[3]);;
 
 		double num1 = Math.random() * lim + 1;
 		double num2 = Math.random() * lim + 1;
