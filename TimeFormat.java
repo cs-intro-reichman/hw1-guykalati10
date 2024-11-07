@@ -20,12 +20,12 @@ public class TimeFormat {
 
 				hours-=12;
 				System.out.print(hours +":0");
-				System.out.print(minutes + "PM");
+				System.out.print(minutes + " PM");
 			}
 
 			else{
 				System.out.print(hours +":0");
-				System.out.print(minutes + "AM");
+				System.out.print(minutes + " AM");
 			}
 		}
 
@@ -35,12 +35,12 @@ public class TimeFormat {
 
 				hours-=12;
 				System.out.print(hours + ":");
-				System.out.print(minutes + "PM");
+				System.out.print(minutes + " PM");
 			}
 
 			else{
 				System.out.print(hours + ":");
-				System.out.print(minutes + "AM");
+				System.out.print(minutes + " AM");
 			}
 
 		}
