@@ -7,7 +7,7 @@ public class Ascend {
 	public static void main(String[] args) {
 		//Random random = new Random();
 
-		int lim = Integer.parseInt(args[3]);;
+		int lim = Integer.parseInt(args[0]);;
 
 		double num1 = Math.random() * lim + 1;
 		double num2 = Math.random() * lim + 1;
@@ -26,11 +26,10 @@ public class Ascend {
 		max = Math.max(a,b);
 		max = Math.max(max,c);
 
-		mid = Math.min(a , b);
-		mid = Math.max(mid , c);
-
 		min = Math.min(a,b);
 		min = Math.min(min,c);
+
+		mid = a + b + c - max - min;
 
 		System.out.println(max + " " + mid + " " + min);
 
