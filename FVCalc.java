@@ -14,7 +14,7 @@ public class FVCalc {
 		rate*=100;
 		
 
-		System.out.println("After " +  n +  " years, a $" + currentValue +  " saved at " +  rate + "%25" +
+		System.out.println("After " +  n +  " years, a $" + currentValue +  " saved at " +  rate + "%" +
 		  " will yield $" +  intResult);
 
 
