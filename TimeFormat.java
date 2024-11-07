@@ -14,16 +14,18 @@ public class TimeFormat {
 		int minutes = Integer.parseInt("" + args[0].charAt(3) + args[0].charAt(4));
 
 		
+		
 
 		if(minutes<10){
-			if(hours>=12){
 
-				if(hours!=12){
-					hours-=12;
-				}
+			if(hours==12){
+				System.out.print(hours +":0");
+				System.out.print(minutes + " PM");
+
+			}
+			else if(hours>12){
 				
-			
-			
+				hours-=12;
 				System.out.print(hours +":0");
 				System.out.print(minutes + " PM");
 			}
@@ -36,12 +38,12 @@ public class TimeFormat {
 
 		else{
 
-			if(hours>=12){
+			if (hours==12) {
+				System.out.print(hours +":");
+				System.out.print(minutes + " PM");
+			}
 
-				if(hours!=12){
-					hours-=12;
-				}
-
+			else if(hours>12){
 				hours-=12;
 				System.out.print(hours + ":");
 				System.out.print(minutes + " PM");
